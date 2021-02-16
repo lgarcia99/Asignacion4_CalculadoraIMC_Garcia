@@ -7,86 +7,68 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/height"
+        android:id="@+id/weight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="21dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="50dp"
         android:ems="10"
         android:hint="@string/peso_en_kg"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/weight"
-        app:layout_constraintEnd_toEndOf="@+id/weight"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:layout_editor_absolutex="110dp" />
 
     <EditText
-        android:id="@+id/weight"
+        android:id="@+id/height"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="31dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="@string/estatura_en_mt"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCalcularIMC"
-        app:layout_constraintEnd_toEndOf="@+id/buttonCalcularIMC"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="@+id/buttonCalcularIMC"
-        app:layout_constraintTop_toBottomOf="@+id/height" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight" />
 
     <Button
         android:id="@+id/buttonCalcularIMC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        android:layout_marginBottom="9dp"
+        android:layout_marginTop="30dp"
         android:text="@string/IMC"
-        app:layout_constraintBottom_toTopOf="@+id/imc"
-        app:layout_constraintEnd_toEndOf="@+id/imc"
-        app:layout_constraintHorizontal_bias="0.528"
-        app:layout_constraintStart_toStartOf="@+id/imc"
-        app:layout_constraintTop_toBottomOf="@+id/weight" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="6dp"
-        app:layout_constraintBottom_toTopOf="@+id/height"
-        app:layout_constraintEnd_toEndOf="@+id/height"
-        app:layout_constraintStart_toStartOf="@+id/height"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/height" />
 
     <TextView
         android:id="@+id/imc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:layout_marginBottom="10dp"
         android:text=""
-        app:layout_constraintBottom_toTopOf="@+id/range"
-        app:layout_constraintEnd_toEndOf="@+id/range"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/range"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonCalcularIMC" />
 
     <TextView
         android:id="@+id/range"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="178dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="175dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginTop="35dp"
         android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imc" />
+        app:layout_constraintTop_toTopOf="@id/imc" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="152dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/msn_blue" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
